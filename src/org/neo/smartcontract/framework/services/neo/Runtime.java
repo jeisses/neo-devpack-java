@@ -4,7 +4,7 @@ import org.neo.smartcontract.framework.Syscall;
 
 public final class Runtime {
 	@Syscall("Neo.Runtime.GetTrigger")
-	public native static TriggerType trigger();
+	public native static byte trigger();
 
 	@Syscall("Neo.Runtime.CheckWitness")
 	public native static boolean checkWitness(byte[] hashOrPubkey);
